@@ -10,3 +10,8 @@
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
+go/Algorithms4/.idea/modules.xml
+go/Algorithms4/.idea/misc.xml
+go/Algorithms4/.idea/workspace.xml
+go/Algorithms4/.idea/Algorithms4.iml
+go/Algorithms4/.idea/vcs.xml
