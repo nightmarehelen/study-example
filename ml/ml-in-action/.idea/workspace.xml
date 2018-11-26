@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7ab231f-b2ec-4df8-a82f-491e9c947e92" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chp04/bayes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chp03/lenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/chp03/lenses.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -208,6 +207,11 @@
             <path>
               <item name="ml-in-action" type="b2602c69:ProjectViewProjectNode" />
               <item name="ml-in-action" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ml-in-action" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ml-in-action" type="462c0819:PsiDirectoryNode" />
+              <item name="chp03" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ml-in-action" type="b2602c69:ProjectViewProjectNode" />
