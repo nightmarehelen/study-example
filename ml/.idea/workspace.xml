@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63e0e4a6-d8cf-404e-b230-c80310405e22" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ml-in-action/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ml-in-action/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml-stanford/machine-learning-ex1/ex1/computeCost.m" beforeDir="false" afterPath="$PROJECT_DIR$/ml-stanford/machine-learning-ex1/ex1/computeCost.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml-stanford/machine-learning-ex1/ex1/computeCostMulti.m" beforeDir="false" afterPath="$PROJECT_DIR$/ml-stanford/machine-learning-ex1/ex1/computeCostMulti.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml-stanford/machine-learning-ex1/ex1/featureNormalize.m" beforeDir="false" afterPath="$PROJECT_DIR$/ml-stanford/machine-learning-ex1/ex1/featureNormalize.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml-stanford/machine-learning-ex1/ex1/gradientDescent.m" beforeDir="false" afterPath="$PROJECT_DIR$/ml-stanford/machine-learning-ex1/ex1/gradientDescent.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml-stanford/machine-learning-ex1/ex1/gradientDescentMulti.m" beforeDir="false" afterPath="$PROJECT_DIR$/ml-stanford/machine-learning-ex1/ex1/gradientDescentMulti.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml-stanford/machine-learning-ex1/ex1/normalEqn.m" beforeDir="false" afterPath="$PROJECT_DIR$/ml-stanford/machine-learning-ex1/ex1/normalEqn.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml-stanford/machine-learning-ex1/ex1/plotData.m" beforeDir="false" afterPath="$PROJECT_DIR$/ml-stanford/machine-learning-ex1/ex1/plotData.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ml-stanford/machine-learning-ex1/ex1/warmUpExercise.m" beforeDir="false" afterPath="$PROJECT_DIR$/ml-stanford/machine-learning-ex1/ex1/warmUpExercise.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml-stanford/machine-learning-ex3/ex3/lrCostFunction.m" beforeDir="false" afterPath="$PROJECT_DIR$/ml-stanford/machine-learning-ex3/ex3/lrCostFunction.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml-stanford/machine-learning-ex3/ex3/oneVsAll.m" beforeDir="false" afterPath="$PROJECT_DIR$/ml-stanford/machine-learning-ex3/ex3/oneVsAll.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml-stanford/machine-learning-ex3/ex3/predict.m" beforeDir="false" afterPath="$PROJECT_DIR$/ml-stanford/machine-learning-ex3/ex3/predict.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml-stanford/machine-learning-ex3/ex3/predictOneVsAll.m" beforeDir="false" afterPath="$PROJECT_DIR$/ml-stanford/machine-learning-ex3/ex3/predictOneVsAll.m" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +17,10 @@
     <session id="1318640988">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -39,12 +36,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/7-algorithm/Lesson_16_Neural_network_example.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="11" />
+              <selected id="5" />
             </state>
           </provider>
         </entry>
@@ -54,7 +51,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1400" />
@@ -86,7 +83,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../dxfparser" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -114,16 +111,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -131,6 +123,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -143,7 +139,7 @@
     <entry file="file://$PROJECT_DIR$/7-algorithm/Lesson_16_Neural_network_example.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="0" />
+          <selected id="5" />
         </state>
       </provider>
     </entry>
