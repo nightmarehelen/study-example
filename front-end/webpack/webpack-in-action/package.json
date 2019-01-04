@@ -1,0 +1,19 @@
+{
+  "name": "webpack-in-action",
+  "version": "1.0.0",
+  "description": "lalal",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --config webpack.config.js --progress",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^2.1.0",
+    "ts-loader": "^5.3.2",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0",
+    "yarn": "^1.12.3"
+  }
+}

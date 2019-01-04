@@ -15,3 +15,6 @@ go/Algorithms4/.idea/misc.xml
 go/Algorithms4/.idea/workspace.xml
 go/Algorithms4/.idea/Algorithms4.iml
 go/Algorithms4/.idea/vcs.xml
+node_modules
+dist
+.idea
