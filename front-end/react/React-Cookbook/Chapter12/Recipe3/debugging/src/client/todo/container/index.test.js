@@ -58,7 +58,7 @@ describe('Todo Container', () => {
     expect(actions).toEqual([{ type: 'mock-FETCH_TODO_SUCCESS' }]);
   });
 
-  it('should map todo and get the todo list from Initial State', () => {
+  it('should map Todo and get the Todo list from Initial State', () => {
     const { todo } = container.props();
     const { todo: { list }} = mockInitialState;
 

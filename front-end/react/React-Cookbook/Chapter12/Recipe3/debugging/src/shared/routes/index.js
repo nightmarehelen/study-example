@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 // Components
 import About from '@about';
 import Home from '@home';
-import Todo from '@todo';
+import Todo from '@Todo';
 
 const paths = [
   {
@@ -20,7 +20,7 @@ const paths = [
   {
     component: Todo,
     exact: true,
-    path: '/todo'
+    path: '/Todo'
   }
 ];
 

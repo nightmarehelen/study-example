@@ -18,7 +18,7 @@ const todo = [
   }
 ];
 
-router.get('/todo/list', (req, res, next) => {
+router.get('/Todo/list', (req, res, next) => {
   res.json({
     response: todo
   });
