@@ -9,6 +9,9 @@ import Timer from './Pomodoro/Timer';
 import Coins from './Coins/Coins';
 import Animation from './Animation/Animation'
 import Numbers from './Numbers/Numbers'
+import Calculator from './Calculator/Calculator'
+import Xss from './Xss/Xss'
+import Person from './Person/Person'
 import './App.css';
 // This is our fake data...
 import { notes1, notes2 } from './Notes/data';
@@ -39,6 +42,9 @@ class App extends Component {
             <Header title={'What a fucking day!'}></Header>
             <Content>
                 <>
+                    <Person></Person>
+                    <Calculator></Calculator>
+                    <Xss></Xss>
                     <Numbers></Numbers>
                     <Animation></Animation>
                     <ChartContainer></ChartContainer>
