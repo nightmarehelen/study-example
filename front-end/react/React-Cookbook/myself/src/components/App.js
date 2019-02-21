@@ -6,12 +6,15 @@ import ChartContainer from './Charts/ChartContainer';
 import Notes from './Notes/Notes';
 import Todo from './Todo/Todo';
 import Timer from './Pomodoro/Timer';
-import Coins from './Coins/Coins';
 import Animation from './Animation/Animation'
+import Animations from './Animations'
+import Animations2 from './Animations2'
 import Numbers from './Numbers/Numbers'
 import Calculator from './Calculator/Calculator'
 import Xss from './Xss/Xss'
-import Person from './Person/Person'
+import PopupContainer from './Person/PopupContainer'
+import RouterContainer from './Routes/RouterContainer'
+import Helmet from 'react-helmet'
 import './App.css';
 // This is our fake data...
 import { notes1, notes2 } from './Notes/data';
@@ -39,17 +42,29 @@ class App extends Component {
 
     render() {
         return <>
+            <Helmet title="Person Information"
+                    meta={[
+                        { name: 'title', content: 'Person Information' },
+                        { name: 'description', content: 'This recipe talks about React Helmet' }
+                    ]}
+
+            >
+                <meta name="title111" content="Person Information111" />
+                <meta name="description111" content="This recipe talks about React Helmet111" />
+            </Helmet>
             <Header title={'What a fucking day!'}></Header>
             <Content>
                 <>
-                    <Person></Person>
+                    <RouterContainer></RouterContainer>
+                    <Animations2></Animations2>
+                    <Animations></Animations>
+                    <PopupContainer></PopupContainer>
                     <Calculator></Calculator>
                     <Xss></Xss>
                     <Numbers></Numbers>
                     <Animation></Animation>
                     <ChartContainer></ChartContainer>
                     <Notes notes={this.state.notes} />
-                    <Coins></Coins>
                     <Timer></Timer>
                     <Todo></Todo>
                 </>

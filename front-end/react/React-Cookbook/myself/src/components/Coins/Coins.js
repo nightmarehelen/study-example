@@ -1,49 +1,47 @@
+// Dependencies
 import React, {Component} from 'react';
+import {array} from 'prop-types';
+
+// Utils
+import {isFirstRender} from '../../shared/utils/frontend';
+
+// Styles
 import './Coins.css';
 
 class Coins extends Component {
-    constructor() {
-        super();
+    static propTypes = {
+        coins: array
+    };
 
-        // Initial state...
-        this.state = {
-            dollars: 0
-        };
-    }
+    componentWillMount() {
+        const {fetchCoins} = this.props;
 
-    shouldComponentUpdate(props, state) {
-        // We only update if the dollars are multiples of 10
-        return state.dollars % 10 === 0;
-    }
-
-    handleOnChange = e => {
-        this.setState({
-            dollars: Number(e.target.value || 0)
-        });
+        // Fetching coins action.
+        fetchCoins();
     }
 
     render() {
+        const {coins: {coins}} = this.props;
+
+        // If the coins const is an empty array,
+        // then we return null.
+        if (isFirstRender(coins)) {
+            return null;
+        }
+
         return (
             <div className="Coins">
-                <h1>Buy Crypto Coins!</h1>
+                <h1>Top 100 Coins</h1>
 
-                <div className="question">
-                    <p>How much dollars do you have?</p><p>
-                    <input
-                        placeholder="0"
-                        onChange={this.handleOnChange}
-                        type="text"
-                    />
-                </p>
-                </div>
-
-                <div className="answer">
-                    <p>Crypto Coin price: $10</p>
-                    <p>
-                        You can buy <strong>{this.state.dollars / 10}</strong>
-                        coins.
-                    </p>
-                </div>
+                <ul>
+                    {coins.map((coin, key) => (
+                        <li key={key}>
+                            <span className="left">{coin.rank} {coin.name} {coin.symbol}
+              </span>
+                            <span className="right">${coin.price_usd}</span>
+                        </li>
+                    ))}
+                </ul>
             </div>
         );
     }

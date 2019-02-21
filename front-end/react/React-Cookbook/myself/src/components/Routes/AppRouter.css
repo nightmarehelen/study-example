@@ -1,0 +1,19 @@
+.App-router ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.App-router ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.App-router ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.App-router ul li a:hover {
+    color: red;
+}

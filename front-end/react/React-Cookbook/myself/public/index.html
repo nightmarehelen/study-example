@@ -24,7 +24,6 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -48,4 +47,18 @@
       Unmount
     </button>
   </body>
+
+  <script>
+      // Detecting the user device
+      const isMobile = /iPhone|Android/i.test(navigator.userAgent);
+
+      // Creating our initialState
+      const initialState = {
+          device: {
+              isMobile
+          }
+      };
+      // Saving our initialState to the window object
+      window.initialState = initialState;
+  </script>
 </html>

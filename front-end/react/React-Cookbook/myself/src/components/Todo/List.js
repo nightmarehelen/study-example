@@ -1,7 +1,13 @@
 import React from 'react';
-
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import './List.css'
 const List = props => (
+
     <ul>
+        <ReactCSSTransitionGroup
+            transitionName="todo"
+            transitionAppear={true}
+        >
         {props.items.map((item, key) => (
             <li
                 key={key}
@@ -37,6 +43,7 @@ const List = props => (
                 </div>
             </li>
         ))}
+    </ReactCSSTransitionGroup>
     </ul>
 );
 

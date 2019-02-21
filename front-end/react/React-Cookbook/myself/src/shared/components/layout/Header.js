@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import logo from '../../images/logo.svg';
-
 class Header extends Component {
     // Here you can define your PropTypes.
     // static propTypes = {
