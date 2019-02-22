@@ -1,0 +1,88 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Learn Redux",
+      "description": "The store, actions, and reducers, oh my!",
+      "timer": 147,
+      "status": "Unstarted"
+    },
+    {
+      "id": 2,
+      "title": "Peace on Earth",
+      "description": "No big deal.",
+      "timer": 135,
+      "status": "Unstarted"
+    },
+    {
+      "id": 3,
+      "title": "Create Facebook for dogs",
+      "description": "The hottest new social network",
+      "timer": 102,
+      "status": "Unstarted"
+    },
+    {
+      "title": "123123",
+      "description": "123123",
+      "status": "In Progress",
+      "timer": 1213,
+      "id": 4
+    },
+    {
+      "title": "1111111",
+      "description": "11111111111",
+      "status": "In Progress",
+      "timer": 100,
+      "id": 5
+    },
+    {
+      "title": "123",
+      "description": "123",
+      "status": "Unstarted",
+      "timer": 100,
+      "id": 6
+    },
+    {
+      "title": "123",
+      "description": "123123",
+      "status": "Unstarted",
+      "timer": 100,
+      "id": 7
+    },
+    {
+      "title": "1231",
+      "description": "23123",
+      "status": "Unstarted",
+      "timer": 100,
+      "id": 8
+    },
+    {
+      "title": "123",
+      "description": "123",
+      "status": "Unstarted",
+      "timer": 100,
+      "id": 9
+    },
+    {
+      "title": "123",
+      "description": "123",
+      "status": "Unstarted",
+      "timer": 100,
+      "id": 10
+    },
+    {
+      "title": "123",
+      "description": "123",
+      "status": "Unstarted",
+      "timer": 100,
+      "id": 11
+    },
+    {
+      "title": "111111111111111",
+      "description": "1111111111",
+      "status": "Unstarted",
+      "timer": 100,
+      "id": 12
+    }
+  ]
+}
