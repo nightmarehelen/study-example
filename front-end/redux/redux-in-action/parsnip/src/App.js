@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux'
 import TasksPage from './components/TasksPage';
-import {createTask, editTask, fetchTasksStarted,filterTasks} from './actions'
+import {createTask, editTask, fetchTasksStarted, filterTasks} from './actions'
 import FlashMessage from "./components/FlashMessage";
-import { getFilteredTasks } from './reducers/';
+import {getGroupedAndFilteredTasks} from './reducers/';
 
 class App extends Component {
 
@@ -26,13 +26,13 @@ class App extends Component {
     render() {
         return (
             <div className='container'>
-                {this.props.error &&  <FlashMessage message={this.props.error} />}
+                {this.props.error && <FlashMessage message={this.props.error}/>}
                 <div className="main-content">
 
                     <TasksPage tasks={this.props.tasks}
                                onCreateTask={this.onCreateTask}
                                onStatusChange={this.onStatusChange}
-                               onSearch = {this.onSearch}
+                               onSearch={this.onSearch}
                                isLoading={this.props.isLoading}
                     />
                 </div>
@@ -42,9 +42,8 @@ class App extends Component {
 }
 
 function mapStateToProps(state) {
-    const {isLoading,error,searchTerm,tasks} = state.tasks;
-
-    return {tasks:getFilteredTasks(tasks, searchTerm), isLoading,error};
+    const {isLoading, error} = state.tasks;
+    return {tasks: getGroupedAndFilteredTasks(state), isLoading, error};
 }
 
 export default connect(mapStateToProps)(App);
