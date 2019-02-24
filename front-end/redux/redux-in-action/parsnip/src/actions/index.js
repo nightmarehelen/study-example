@@ -35,7 +35,9 @@ export function createTask({title, description, status = 'Unstarted'}) {
     };
 }
 
-
+export function filterTasks(searchTerm) {
+    return { type: 'FILTER_TASKS', payload: { searchTerm } };
+}
 // function createTaskSucceeded(task) {
 //     return {
 //         type: 'CREATE_TASK_SUCCEEDED',

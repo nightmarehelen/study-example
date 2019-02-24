@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux'
 import TasksPage from './components/TasksPage';
-import {createTask, editTask, fetchTasksStarted} from './actions'
+import {createTask, editTask, fetchTasksStarted,filterTasks} from './actions'
 import FlashMessage from "./components/FlashMessage";
+import { getFilteredTasks } from './reducers/';
 
 class App extends Component {
 
@@ -18,6 +19,10 @@ class App extends Component {
         this.props.dispatch(fetchTasksStarted())
     }
 
+    onSearch = searchTerm => {
+        this.props.dispatch(filterTasks(searchTerm));
+    };
+
     render() {
         return (
             <div className='container'>
@@ -27,6 +32,7 @@ class App extends Component {
                     <TasksPage tasks={this.props.tasks}
                                onCreateTask={this.onCreateTask}
                                onStatusChange={this.onStatusChange}
+                               onSearch = {this.onSearch}
                                isLoading={this.props.isLoading}
                     />
                 </div>
@@ -36,8 +42,9 @@ class App extends Component {
 }
 
 function mapStateToProps(state) {
-    const {tasks, isLoading,error} = state.tasks;
-    return {tasks, isLoading,error};
+    const {isLoading,error,searchTerm,tasks} = state.tasks;
+
+    return {tasks:getFilteredTasks(tasks, searchTerm), isLoading,error};
 }
 
 export default connect(mapStateToProps)(App);
